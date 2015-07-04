@@ -1,0 +1,6 @@
+v 3
+d ettests
+d Command to load results from t-tests into e()
+d so that they can be accessed by esttab.
+
+p ettests
