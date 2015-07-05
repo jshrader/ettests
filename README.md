@@ -4,12 +4,14 @@ Place t-tests in e() for table creation in Stata.
 To get utility from this command, you should install estout. Most of the code for the command comes from Ben Jann here:
 http://repec.org/bocode/e/estout/advanced.html#advanced602
 
+
 # Sytax
 ```
 ettests varlist [if] [in], by(varname) [CASEwise * ]
 ```
 # Options
 `casewise` - By default the command computes ttests over observations where all variables in the varlist are nonmissing. The casewise option causes the command to take all observations of each variable, subject to if and in.
+`nodisplay` - Don't display the t test results interactively. You could just use quietly. 
 
 # Example
 ```
