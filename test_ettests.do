@@ -12,9 +12,9 @@ sysuse auto.dta, clear
 ettests price mpg, by(foreign)
  esttab , cells("mu_1 mu_2 d N_1 N_2" "sd_1 sd_2 se")
 ettests price mpg rep78, by(foreign)
- esttab , cells("mu_1 mu_2 d N_1 N_2" "sd_1 sd_2 d_se")
+ esttab , cells("mu_1 mu_2 d N_1 N_2" "sd_1 sd_2 se")
 ettests price mpg rep78, by(foreign) casewise
- esttab , cells("mu_1 mu_2 d N_1 N_2" "sd_1 sd_2 d_se")
+ esttab , cells("mu_1 mu_2 d N_1 N_2" "sd_1 sd_2 se")
 
 
 * Test the published version
@@ -24,11 +24,11 @@ net install ettests, from("https://raw.githubusercontent.com/jshrader/ettests/ma
 
 sysuse auto.dta, clear
 ettests price mpg, by(foreign)
- esttab , cells("mu_1 mu_2 d N_1 N_2" "sd_1 sd_2 d_se")
+ esttab , cells("mu_1 mu_2 d N_1 N_2" "sd_1 sd_2 se")
 ettests price mpg rep78, by(foreign)
- esttab , cells("mu_1 mu_2 d N_1 N_2" "sd_1 sd_2 d_se")
+ esttab , cells("mu_1 mu_2 d N_1 N_2" "sd_1 sd_2 se")
 ettests price mpg rep78, by(foreign) casewise
- esttab , cells("mu_1 mu_2 d N_1 N_2" "sd_1 sd_2 d_se")
+ esttab , cells("mu_1 mu_2 d N_1 N_2" "sd_1 sd_2 se")
 
 * Make sure the help file installs
 help ettests
