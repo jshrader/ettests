@@ -6,7 +6,7 @@
 * This is currently written to test the development version of ettests.ado
 capture program drop ettests
 cap ado uninstall ettests
-net install ettests, from(~/google_drive/bin/stata/ettests/)
+net install ettests, from(~/Dropbox/bin/stata/ettests/)
 
 sysuse auto.dta, clear
 ettests price mpg, by(foreign)

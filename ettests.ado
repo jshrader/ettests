@@ -1,4 +1,4 @@
-*! version 1.1.0  July 8, 2015 @ 14:29:05
+*! version 1.1.0  July 8, 2015 @ 14:32:01
 program ettests, eclass
    * Based on code from Ben Jann
    *    http://repec.org/bocode/e/estout/advanced.html#advanced603
